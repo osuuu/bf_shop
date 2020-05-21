@@ -23,7 +23,7 @@
 后台登录地址： 域名/bf-login <br>
 安装前需配置伪静态，否则会报错<br>
 ### Apache伪静态规则示例 （Nginx请自行转换）
-···
+```
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -32,6 +32,6 @@
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
-···
+```
 
 
